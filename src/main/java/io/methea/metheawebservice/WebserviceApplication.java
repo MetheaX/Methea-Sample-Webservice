@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication(scanBasePackages = {"io.methea"})
-@EnableJpaRepositories(basePackages = {"io.methea"})
-@EntityScan(basePackages = {"io.methea"})
-@ComponentScan(basePackages = {"io.methea"})
+@SpringBootApplication(scanBasePackages = {"io.github.metheax", "io.methea"})
+@EnableJpaRepositories(basePackages = {"io.github.metheax", "io.methea"})
+@EntityScan(basePackages = {"io.github.metheax", "io.methea"})
+@ComponentScan(basePackages = {"io.github.metheax", "io.methea"})
 public class WebserviceApplication {
     public static void main(String[] args) {
         SpringApplication.run(WebserviceApplication.class, args);
